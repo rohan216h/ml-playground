@@ -14,7 +14,7 @@ st.set_page_config(page_title="ML Playground", layout="wide")
 st.sidebar.title("🔧 Settings")
 
 # Select task type
-task_type = st.sidebar.radio("Select Task", ["Classification", "Regression", "Image Classification"])
+task_type = st.sidebar.radio("Select Task", ["Classification", "Regression"])
 
 # Load data
 uploaded_file = st.sidebar.file_uploader("Upload Dataset (CSV)", type=["csv"])
@@ -52,10 +52,10 @@ if st.sidebar.button("Run Prediction") and data is not None:
     except Exception as e:
         st.error(f"Error in processing: {e}")
 
-# Image Classification placeholder
-if task_type == "Image Classification":
-    image = st.file_uploader("Upload Image", type=["jpg", "png", "jpeg"])
-    if image and st.sidebar.button("Classify Image"):
-        st.image(image, caption="Uploaded Image", use_column_width=True)
-        # Placeholder prediction result
-        st.success("Predicted Class: ExampleClass (placeholder)")
+# # Image Classification placeholder
+# if task_type == "Image Classification":
+#     image = st.file_uploader("Upload Image", type=["jpg", "png", "jpeg"])
+#     if image and st.sidebar.button("Classify Image"):
+#         st.image(image, caption="Uploaded Image", use_column_width=True)
+#         # Placeholder prediction result
+#         st.success("Predicted Class: ExampleClass (placeholder)")
