@@ -3,7 +3,6 @@
 An interactive Streamlit app demonstrating three machine learning tasks:
 - 📉 Regression (Housing Prices)
 - 🧮 Classification (Titanic Survival)
-- 🐱🐶 Image Classification (Cats vs Dogs)
 
 ## 🚀 Features
 
@@ -17,7 +16,6 @@ An interactive Streamlit app demonstrating three machine learning tasks:
 |-----------------|------------------------|---------------------|
 | Regression      | Linear Regression      | Boston Housing      |
 | Classification  | Random Forest          | Titanic Dataset     |
-| Image Classifier| CNN (Keras Sequential) | Cats vs Dogs        |
 
 ## 📁 Project Structure
 
